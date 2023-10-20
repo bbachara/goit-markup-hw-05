@@ -28,7 +28,7 @@
             >Web<span class="logo-studio">Studio</span></a
           >
           <ul class="list">
-            <li class="header-list">
+            <li class="header-list header-list--current">
               <a class="menu link" href="./index.html">Studio</a>
             </li>
             <li class="header-list">
@@ -59,7 +59,9 @@
       <section class="title-section section">
         <div class="container main-header">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button class="title-button" type="button">Order Service</button>
+          <button class="title-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -429,5 +431,19 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-icon" width="8" height="8">
+            <use
+              href="./images/symbol-defs-x.svg#icon-close-black-18dp-2-1"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
