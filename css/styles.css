@@ -115,10 +115,6 @@ body {
   margin-right: 0;
 }
 
-.header-list > a {
-  color: inherit;
-}
-
 .header-list-active {
   position: relative;
   color: var(--color-pressed-state);
